@@ -1,0 +1,208 @@
+.body {
+background-image:url('../image/back4.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+.header {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.smallCard {
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+border-radius: 4px;
+width: 100%;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.category--left {
+display: flex;
+flex-direction: column;
+}
+
+.countAmount {
+display:flex;
+gap:5%;
+
+margin-bottom: 10px;
+}
+.countAmount p{
+border:solid blue;
+padding:4%;
+border-radius:50%;
+}
+
+.search {
+display: flex;
+align-items: center;
+}
+
+.search input {
+border: solid 0.8px;
+padding: 10px;
+border-radius: 4px;
+margin-right: 10px;
+}
+
+.search button {
+background-color: #fff;
+border: none;
+padding: 10px;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+cursor: pointer;
+}
+.search button:hover{
+    background-color:rgb(181, 181, 172)
+}
+
+.AddNew {
+background-color: #0077c2;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.AddNew:hover {
+background-color: #005ea8;
+}
+
+.tablePlace {
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+border-radius: 4px;
+padding: 20px;
+width: 100%;
+}
+
+h2 {
+font-size: 24px;
+margin-bottom: 20px;
+padding-left:40%;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+table td, table th {
+padding: 10px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+table th {
+font-weight: bold;
+}
+
+
+.formPage {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+padding: 20px;
+background-color: #f7f7f7;
+border-radius: 5px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.formPage h3 {
+margin-top: 0;
+}
+
+.formPage form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.formPage .large{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.large div{
+    width:100%;
+    margin:0% 5%;
+}
+.formPage form div {
+display: flex;
+flex-direction: column;
+margin-bottom: 10px;
+}
+
+.formPage form label {
+font-weight: bold;
+}
+
+.formPage form input {
+padding: 5px;
+border-radius: 5px;
+border: none;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+width: 80%;
+}
+
+.formPage form button {
+padding: 10px;
+border-radius: 5px;
+border: none;
+background-color: #2e7d32;
+color: white;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+width: 300px;
+transition: background-color 0.2s ease-in-out;
+}
+
+.formPage form button:hover {
+background-color: #1b5e20;
+}
+
+.trash-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('../image/trash.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media all and (max-width:600px) {
+    .body{
+        padding: 5px;
+    }
+    .formPage{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .smallCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2%;
+        padding: 0px 10px;
+    }
+    .large div button{
+        max-width: 85%;
+    }
+}
+@media all and (max-width:500px){
+    body{
+        padding: 0px;
+    }
+}
